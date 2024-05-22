@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 1920px;
+    height: 945px;
+    /* height: 100%; */
+    background-color: #314153;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BYUNGMIN’S */
+
+header {
+    position: absolute;
+    width: 421px;
+    height: 66px;
+    left: 212px;
+    top: 458px;
+}
+
+header h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    color: #fff;
+    line-height: 73px;
+}
+
+header h1 .point-color {
+    font-family: 'Inter';
+    color: #f06161
+}
+
+nav {
+    position: absolute;
+    top: 331px;
+    left: 1727px;
+    width: 92px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+}
+
+nav ul li.active a {
+    color: #FF5C5C;
+}
+
+.arrow {
+    position: absolute;
+    left: 1021px;
+    top: 905px;
+    font-size: 20px; 
+    color: #fff;
+    opacity: 0.6;
+}
