@@ -93,20 +93,20 @@ header h1 .point-color {
 
 
 /* ABOUT section */
-.about {
+.section {
     margin-top: 216px;
     margin-left: 300px;
     margin-right: 300px;
 }
 
-.about-text {
+.title-text {
     font-size: 36px;
     font-weight: 900;
     position: relative;
     display: inline-block;
 }
 
-.about-text::after {
+.title-text::after {
     content: "";
     position: absolute;
     left: 114px;
@@ -116,6 +116,13 @@ header h1 .point-color {
     background-color: black;
 }
 
+.photo {
+    background-color: greenyellow;
+    min-width: 261px;
+    min-height: 328px;
+    height: 328px;
+}
+
 .about-contents {
     margin-top: 52px;
     display: flex;
@@ -123,13 +130,21 @@ header h1 .point-color {
 }
 
 .about-title {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     gap: 40px;
     width: 76px;
     height: 139px;
     font-size: 18px;
+    font-weight: bold; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 128px;
+    height: 139px;
+    font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 
 .about-content {
@@ -141,6 +156,80 @@ header h1 .point-color {
 }
 
 .about-lisence-text {
+    margin-top: 104px;
     font-size: 36px;
     font-weight: 900;
 }
+
+.about-lisence-contents {
+    display: flex;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.about-license-date {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 128px;
+    height: 139px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-lisence-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 400px;
+    height: 139px;
+}
+
+/* SKILLS section */
+
+.skills {
+    margin-top: 120px;
+}
+
+.skills-stack {
+    color: #f06161;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 35px;
+}
+
+.skills-frontend {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
+
+.skills-backend {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+}
+
+/* PROJECT section */
+.project-text::after {
+    content: "";
+    position: absolute;
+    left: 156px;
+    bottom: 14px; 
+    width: 127px;
+    height: 1.5px; 
+    background-color: black;
+}
+
+/*tab css*/
+.tab{float:left; width:600px; height:290px;}
+.tabnav{font-size:0; width:600px; border:1px solid #ddd;}
+.tabnav li{display: flex; flex-direction: column; height:46px; text-align:center; border-right:1px solid #ddd;}
+.tabnav li a:before{content:""; position:absolute; left:0; top:0px; width:100%; height:3px; }
+.tabnav li a.active:before{background:#7ea21e;}
+.tabnav li a.active{border-bottom:1px solid #fff;}
+.tabnav li a{ position:relative; display:block; background: #f8f8f8; color: #000; padding:0 30px; line-height:46px; text-decoration:none; font-size:16px;}
+.tabnav li a:hover,
+.tabnav li a.active{background:#fff; color:#7ea21e; }
+.tabcontent{padding: 20px; height:244px; border:1px solid #ddd; border-top:none;}
