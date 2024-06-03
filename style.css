@@ -2,6 +2,8 @@ body, html {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
     max-width: 1920px;
     font-family: 'Inter', sans-serif;
 }
@@ -10,27 +12,26 @@ body, html {
     box-sizing: border-box;
   } */
 
+.point-color {
+    color: #f06161;
+}
+
 .main {
+    min-width: 1320px;
     position: relative;
     width: 100%;
-    
     height: 953px;
     background-color: #314153;
-    /* display: flex;
-    flex-direction: column;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    /* justify-content: center; */
     
 }
 
 /* BYUNGMIN’S */
 
 header {
-    position: absolute;
-    width: 421px;
-    height: 66px;
-    left: 212px;
-    top: 458px;
+    margin-left: 310px;
 }
 
 header h1 {
@@ -48,14 +49,12 @@ header h1 .point-color {
 }
 
 .nav-bar {
-    position: absolute;
+    /* position: absolute;
     top: 331px;
     right: 193px;
     width: 92px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 320px; */
+    margin-right: 193px;
 }
 
 .nav-bar ul {
@@ -66,6 +65,7 @@ header h1 .point-color {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 57px;
 }
 
 .nav-bar ul li {
@@ -102,6 +102,13 @@ header h1 .point-color {
     margin-top: 216px;
     margin-left: 300px;
     margin-right: 300px;
+}
+
+.about {
+    min-width: 1320px;
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-top: 216px;
 }
 
 .title-text {
@@ -146,7 +153,7 @@ header h1 .point-color {
     flex-direction: column;
     gap: 40px;
     width: 128px;
-    height: 139px;
+    /* height: 139px; */
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -194,6 +201,9 @@ header h1 .point-color {
 /* SKILLS section */
 
 .skills {
+    min-width: 1320px;
+    max-width: 1320px;
+    margin: 0 auto;
     margin-top: 120px;
 }
 
@@ -204,16 +214,48 @@ header h1 .point-color {
     margin-top: 35px;
 }
 
-.skills-frontend {
-    width: 100px;
-    height: 100px;
-    background-color: greenyellow;
+.skills-frontend > img {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
 }
 
-.skills-backend {
-    width: 100px;
-    height: 100px;
-    background-color: salmon;
+.skills-backend > img {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+}
+
+.html-text {
+    color: #E65100;
+}
+.css-text {
+    color: #1572B6;
+}
+.js-text {
+    color: #F5DE19;
+}
+.jq-text {
+    color: #0867AC;
+}
+.tc-text {
+    color: #06B6D4;
+}
+.react-text {
+    color: #08D9FD;
+}
+
+.sp-text {
+    color: #6DB33F;
+}
+.sb-text {
+    color: #6DB33F;
+}
+.jsp-text {
+    color: #EA8120;
+}
+.mysql-text {
+    color: #004463;
 }
 
 /* PROJECT section */
@@ -250,7 +292,7 @@ input[id=web-tab2]:checked ~ .web-tab-btn label[for=web-tab2],
 input[id=web-tab3]:checked ~ .web-tab-btn label[for=web-tab3]
  {
     background-color: #f06161;
-    border-radius: 20px;
+    border-radius: 15px;
     color: #fff;
     /* text-decoration: line-through;
     text-decoration-color: #6cedb9;
@@ -326,13 +368,19 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     object-position: top;
     transition: 8s;
 }
+
+.todolist-img img {
+    transition: 1s;
+}
+
 .web-photo img:hover {
     object-position: bottom;
 }
 
 /* tab-info */
 .tab-info {
-    
+    display: flex;
+    flex-direction: column;
 }
 .tab-info h3 {
     font-size: 30px;
@@ -345,7 +393,7 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     font-size: 18px;
     padding-left: 30px;
 }
-.tab-info p {
+.tab-info > p {
     width: 430px;
     margin: 30px 0 20px 0;
     font-size: 15px;
@@ -367,15 +415,17 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     color: #fff;
     font-size: 14px;
     display: inline-block;
-    width: 100px;
-    height: 40px;
+    width: 127px;
+    height: 48px;
     text-align: center;
-    padding-top: 8px;
-    border-radius: 20px;
-    margin: 20px 3px 0 0;
+    /* padding-top: 8px; */
+    padding-top: 12px;
+    border-radius: 10px;
+    margin: 50px 30px 0 0;
     transition:0.35s;
     cursor: pointer;
   }
+
 .result-buttons .btn:hover {
     text-decoration: none;
     color: #fff;
@@ -383,10 +433,16 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.22);
 }
 
+.result-buttons {
+    margin-top: 10px;
+}
+
 .project-contents {
+    height: 100%;
     margin-top: 52px;
     display: flex;
-    gap: 88px;
+    gap: 75px;
+    color: #222222;
 }
 
 .project-title {
@@ -394,16 +450,72 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     flex-direction: column;
     gap: 50px;
     width: 128px;
-    height: 139px;
+    /* height: 139px; */
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
 }
 
 .project-content {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    width: 243px;
-    height: 139px;
+    /* width: 235px; */
+    /* height: 139px; */
+}
+
+/* footer */
+.footer {
+    min-width: 1320px;
+    width: 100%;
+    height: 745px;
+    background-color: #314153;
+}
+
+.contact-text {
+    padding-top: 91px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 36px;
+    color: #fff;
+}
+
+.mail-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.email {
+    width: 500px;
+    height: 38px;
+    padding: 10px;
+}
+
+.message {
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+}
+
+.label-text {
+    color: #fff;
+    font-size: 11px;
+}
+
+.send-btn {
+    width: 500px;
+    height: 38px;
+    margin-top: 38px;
+    background-color: #f06161;
+    color: white;
+    font-weight: 900;
+}
+
+.resolution {
+    margin-top: 76px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
 }

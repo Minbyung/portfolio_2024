@@ -13,11 +13,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div>
+    <div class="w-full">
         <section class="main">
             <header>
                 <h1>BYUNGMIN<span class="point-color">'</span>S</h1>
             </header>
+            <div class="flex-1"></div>
             <nav class="nav-bar">
                 <ul>
                     <li class="active"><a href="#home">Home</a></li>
@@ -33,15 +34,15 @@
             </svg>
         </section>
 
-        <section class="about section">
+        <section id="about" class="about section">
             <div class="about-text title-text">ABOUT</div>
             <div class="flex justify-between">
                 <div>
                     <div class="about-contents">
                         <div class="about-title">
-                            <span>birthday</span>
-                            <span>email</span>
-                            <span>github</span>
+                            <span>Birthday</span>
+                            <span>Email</span>
+                            <span>Github</span>
                         </div>
                         <div class="about-content">
                             <span>1993.11.16</span>
@@ -61,31 +62,62 @@
                         </div>
                     </div>
                 </div>
+                <!-- <div class="flex-1"></div> -->
                 <div class="photo"></div>
             </div>
         </section>
 
-        <section class="skills section">
+        <section id="skills" class="skills section">
             <div class="skills-text title-text">SKILLS</div>
             <div class="skills-stack"><p>FRONTEND</p></div>
-            <div class="skills-frontend-wrap flex gap-16 mt-8">
-                <div class="skills-frontend skills-frontend-1"></div>
-                <div class="skills-frontend skills-frontend-2"></div>
-                <div class="skills-frontend skills-frontend-3"></div>
-                <div class="skills-frontend skills-frontend-4"></div>
-                <div class="skills-frontend skills-frontend-5"></div>
-                <div class="skills-frontend skills-frontend-6"></div>
+            <div class="skills-frontend-wrap flex gap-8 mt-8">
+                <div class="skills-frontend skills-frontend-1 flex flex-col">
+                  <img src="images/icons8-html-96.png" alt="">
+                  <span class="html-text text-center">HTML</span>
+                </div>
+                <div class="skills-frontend skills-frontend-2 flex flex-col">
+                  <img src="images/icons8-css3-96.png" alt="">
+                  <span class="css-text text-center">CSS</span>
+                </div>
+                <div class="skills-frontend skills-frontend-3 flex flex-col">
+                  <img src="images/icons8-js-96.png" alt="">
+                  <span class="js-text text-center">JavaScripts</span>
+                </div>
+                <div class="skills-frontend skills-frontend-4 flex flex-col">
+                  <img src="images/icons8-jquery-96.png" alt="">
+                  <span class="jq-text text-center">jQuery</span>
+                </div>
+                <div class="skills-frontend skills-frontend-5 flex flex-col">
+                  <img src="images/icons8-tailwind-css-96.png" alt="">
+                  <span class="tc-text text-center">Tailwind CSS</span>
+                </div>
+                <div class="skills-frontend skills-frontend-6 flex flex-col">
+                  <img class="mx-auto" src="images/icons8-react-96.png" alt="">
+                  <span class="react-text text-center">React</span>
+                </div>
             </div>
             <div class="skills-stack mt-20"><p>BACKEND</p></div>
-            <div class="skills-frontend-wrap flex gap-16 mt-8">
-                <div class="skills-backend skills-backend-1"></div>
-                <div class="skills-backend skills-backend-2"></div>
-                <div class="skills-backend skills-backend-3"></div>
-                <div class="skills-backend skills-backend-4"></div>
+            <div class="skills-frontend-wrap flex gap-8 mt-8">
+                <div class="skills-backend skills-backend-1 flex flex-col">
+                  <img src="images/icons8-spring-96.png" alt="">
+                  <span class="sp-text text-center">Spring</span>
+                </div>
+                <div class="skills-backend skills-backend-2 flex flex-col">
+                  <img src="images/icons8-spring-boot-96.png" alt="">
+                  <span class="sb-text text-center">Spring Boot</span>
+                </div>
+                <div class="skills-backend skills-backend-3 flex flex-col">
+                  <img src="images/icons8-jsp-96.png" alt="">
+                  <span class="jsp-text text-center">JSP</span>
+                </div>
+                <div class="skills-backend skills-backend-4 flex flex-col">
+                  <img src="images/icons8-mysql-96.png" alt="">
+                  <span class="mysql-text text-center">MySQL</span>
+                </div>
             </div>
         </section>
 
-        <section class="project section flex flex-col">
+        <section id="project" class="project section flex flex-col">
             <div class="project-text title-text">PROJECT</div>
 
             <div class="content-inner mt-36">
@@ -107,51 +139,57 @@
                         <h3>KAKAOBANK 클론 코딩</h3>
                         <div class="project-contents">
                           <div class="project-title">
-                              <span>birthday</span>
-                              <span>email</span>
-                              <span>github</span>
+                              <span>작업기간</span>
+                              <span>제작방식</span>
+                              <span>작업참여도</span>
+                              <span>참고사항</span>
                           </div>
                           <div class="project-content">
-                              <span>1993.11.16</span>
-                              <span>mbmcybery@gmail.com</span>
-                              <span>https://github.com/Minbyung</span>
+                              <span>10일</span>
+                              <span>HTML + CSS + JS </span>
+                              <span>개인작업</span>
+                              <span>
+                                <p>Flex 기반의 반응형 웹 레이아웃</p>
+                                <p class="mt-5">슬라이더 구현을 위해<br>
+                                Slick Slider 라이브러리 사용</p>
+                              </span>
                           </div>
                         </div>
-
-
-                        <!-- <ul>
-                          <li>작업기간: HTML+CSS+JQUERY</li>
-                          <li>레이아웃 제작방식 : CSS Grid & Flex</li>
-                          <li>플러그인: Slick slider</li>
-                          <li>제작 참여율: 100%</li>
-                        </ul> -->
                         <div class="result-buttons">
-                          <a class="btn" href="portfolio/website-publishing/01/index.html">웹사이트</a>
-                          <a class="btn mobile" href="portfolio/website-publishing/website-publishing-mockup-01.html">Github</a>
+                          <a class="btn" href="#">웹사이트</a>
+                          <a class="btn mobile" href="#">Github</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="web-tab">
                     <div class="tab-inner">
-                      <div class="web-photo">
+                      <div class="web-photo todolist-img">
                         <img src="images\todolist.png">
                       </div>
                       <div class="tab-info">
                         <h3>TODOLIST</h3>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus minus aliquam, temporibus unde veritatis deserunt necessitatibus tenetur molestiae quod rem praesentium quae ipsa voluptatibus voluptas. Recusandae veniam ipsa perferendis quae?
-                        </p>
-                        <ul>
-                          <li>UI 디자인 방식: Photoshop</li>
-                          <li>퍼블리싱 제작방식: HTML+CSS+JQUERY</li>
-                          <li>레이아웃 제작방식 : CSS Grid & Flex</li>
-                          <li>플러그인: Slick slider</li>
-                          <li>제작 참여율: 100%</li>
-                        </ul>
+                        <div class="project-contents">
+                          <div class="project-title">
+                              <span>작업기간</span>
+                              <span>제작방식</span>
+                              <span>작업참여도</span>
+                              <span>참고사항</span>
+                          </div>
+                          <div class="project-content">
+                              <span>10일</span>
+                              <span>HTML + CSS + JS </span>
+                              <span>개인작업</span>
+                              <span>
+                                <p>Flex 기반의 반응형 웹 레이아웃</p>
+                                <p class="mt-5">슬라이더 구현을 위해<br>
+                                Slick Slider 라이브러리 사용</p>
+                              </span>
+                          </div>
+                        </div>
                         <div class="result-buttons">
-                          <a class="btn" href="portfolio/website-publishing/02/index.html">웹사이트</a>
-                          <a class="btn mobile" href="portfolio/website-publishing/website-publishing-mockup-02.html">Github</a>
+                          <a class="btn" href="#">웹사이트</a>
+                          <a class="btn mobile" href="#">Github</a>
                         </div>
                       </div>
                     </div>
@@ -163,29 +201,62 @@
                       </div>
                       <div class="tab-info">
                         <h3>협업랜드</h3>
-                        <p>
-                          아무말
-                        </p>
-                        <ul>
-                          <li>UI 디자인 방식: Photoshop</li>
-                          <li>퍼블리싱 제작방식: HTML+CSS+JQUERY</li>
-                          <li>레이아웃 제작방식 : CSS Grid & Flex</li>
-                          <li>플러그인: Slick slider</li>
-                          <li>제작 참여율: 100%</li>
-                        </ul>
+                        <div class="project-contents">
+                          <div class="project-title">
+                              <span>작업기간</span>
+                              <span>제작방식</span>
+                              <span>작업참여도</span>
+                              <span>참고사항</span>
+                          </div>
+                          <div class="project-content">
+                              <span>10일</span>
+                              <span>HTML + CSS + JS </span>
+                              <span>개인작업</span>
+                              <span>
+                                <p>Flex 기반의 반응형 웹 레이아웃</p>
+                                <p class="mt-5">슬라이더 구현을 위해<br>
+                                Slick Slider 라이브러리 사용</p>
+                              </span>
+                          </div>
+                        </div>
                         <div class="result-buttons">
-                          <a class="btn" href="portfolio/website-publishing/03/index.html">웹사이트.</a>
-                          <a class="btn mobile" href="portfolio/website-publishing/website-publishing-mockup-03.html">Github</a>
+                          <a class="btn" href="#">웹사이트</a>
+                          <a class="btn mobile" href="#">Github</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+            </div>
         </section>
 
-        <section>
-            <div>CONTACT</div>
+        <section id="contact" class="footer">
+            <div class="contact-text">CONTACT</div>
+            <div class="mail-form">
+              <form
+                action="https://formspree.io/f/moqgolev"
+                method="POST"
+              >
+                <div class="flex flex-col">
+                  <label>
+                    <div class="label-text">Email</div>  
+                    <input class="email" type="email" name="_replyto" placeholder="이메일 주소를 입력해주세요.">
+                  </label>
+                  <label class="mt-8">
+                    <div class="label-text">Message</div>
+                    <textarea class="message" name="message" placeholder="내용을 입력해주세요."></textarea>
+                  </label>
+                  <button class="send-btn" name="submit1" type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+            <div class="resolution">
+              <p>늘 <span class="point-color">겸손</span>한 자세로 배우고 <span class="point-color">책임감</span>있는 <span class="point-color">열정</span>적인 팀원으로 함께할 것을 약속드립니다.</p>
+              <p class="mt-5">감사합니다!</p>
+            </div>
+            
+
+
         </section>
 
 
