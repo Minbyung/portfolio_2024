@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html {
     scroll-behavior: smooth;
     margin: 0;
@@ -5,17 +19,15 @@ body, html {
     width: 100%;
     height: 100%;
     max-width: 1920px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Pretendard-Regular', sans-serif;
 }
 
-/* * {
-    box-sizing: border-box;
-  } */
-
+/* 커스텀 */
 .point-color {
     color: #f06161;
 }
 
+/* HOME */
 .main {
     min-width: 1320px;
     position: relative;
@@ -23,9 +35,7 @@ body, html {
     height: 953px;
     background-color: #314153;
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    
+    align-items: center;   
 }
 
 /* BYUNGMIN’S */
@@ -35,7 +45,8 @@ header {
 }
 
 header h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'ONE-Mobile-POP', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
     font-style: normal;
     font-weight: 900;
     font-size: 60px;
@@ -43,17 +54,11 @@ header h1 {
     line-height: 73px;
 }
 
-header h1 .point-color {
-    font-family: 'Inter';
-    color: #f06161
+header h1 > span {
+    color: #f06161    
 }
 
 .nav-bar {
-    /* position: absolute;
-    top: 331px;
-    right: 193px;
-    width: 92px;
-    height: 320px; */
     margin-right: 193px;
 }
 
@@ -75,10 +80,9 @@ header h1 .point-color {
 
 .nav-bar ul li a {
     text-decoration: none;
-    font-family: 'Inter';
+    font-family: 'ONE-Mobile-POP', sans-serif;
     font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     color: #fff;
 }
@@ -99,9 +103,7 @@ header h1 .point-color {
 
 /* ABOUT section */
 .section {
-    margin-top: 216px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 216px 300px 0px 300px;
 }
 
 .about {
@@ -112,6 +114,8 @@ header h1 .point-color {
 }
 
 .title-text {
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'ONE-Mobile-POP', sans-serif;
     font-size: 36px;
     font-weight: 900;
     position: relative;
@@ -142,18 +146,10 @@ header h1 .point-color {
 }
 
 .about-title {
-    /* display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 76px;
-    height: 139px;
-    font-size: 18px;
-    font-weight: bold; */
     display: flex;
     flex-direction: column;
     gap: 40px;
     width: 128px;
-    /* height: 139px; */
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -164,7 +160,7 @@ header h1 .point-color {
     flex-direction: column;
     gap: 40px;
     width: 243px;
-    height: 139px;
+    color: #222;
 }
 
 .about-lisence-text {
@@ -195,7 +191,7 @@ header h1 .point-color {
     flex-direction: column;
     gap: 40px;
     width: 400px;
-    height: 139px;
+    color: #222222;
 }
 
 /* SKILLS section */
@@ -282,7 +278,7 @@ header h1 .point-color {
 }
 
 
-/* 탭버튼 */
+/* tab button */
 input[name=weblist] {
     display: none;
 }
@@ -294,9 +290,6 @@ input[id=web-tab3]:checked ~ .web-tab-btn label[for=web-tab3]
     background-color: #f06161;
     border-radius: 15px;
     color: #fff;
-    /* text-decoration: line-through;
-    text-decoration-color: #6cedb9;
-    text-decoration-thickness: 2px; */
 }
 input[id=web-tab1]:checked ~ .web-tabs .web-tab:nth-child(1),
 input[id=web-tab2]:checked ~ .web-tabs .web-tab:nth-child(2),
@@ -304,16 +297,15 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
  {
     opacity: 1;
     visibility: visible;
-    /* display: block; */
 }
 
 .web-tab-btn {
     text-align: center;
-    min-width: 190px;
+    /* min-width: 190px; */
+    min-width: 160px;
     display: flex;
     flex-direction: column;
     gap: 80px;
-    /* flex: 1; */
 }
 
 .web-tab-btn label {
@@ -323,20 +315,13 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     line-height: 3em;
     cursor: pointer;
     color: #828282;
-    /* text-transform: uppercase; */
-    /* margin: 10px 0; */
-    
 }
-
-.web-tabs {
-    /* flex: 3; */
-} 
 
 .web-tabs {
     position: relative;
     width: 100%;
     height: inherit;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 .web-tab {
     position: absolute;
@@ -344,13 +329,12 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     left: 0;
     opacity: 0;
     visibility: hidden;
-    /* display: none; */
     transition: 0.5s;
 }
 
 .tab-inner {
     display: flex;
-    gap: 70px;
+    gap: 65px;
 }
  
 /* web photo */
@@ -388,27 +372,6 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     margin: 0;
     text-transform: capitalize;
 }
-.tab-info h3 b {
-    font-weight: 600;
-    font-size: 18px;
-    padding-left: 30px;
-}
-.tab-info > p {
-    width: 430px;
-    margin: 30px 0 20px 0;
-    font-size: 15px;
-    line-height: 1.8em;
-}
-.tab-info p b {
-    font-weight: 500;
-}
-.tab-info ul {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin-top: 36px;
-    /* padding-left: 16px; */
-}
 
 .result-buttons .btn {
     background-color: #2b2b2b;
@@ -419,7 +382,7 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     height: 48px;
     text-align: center;
     /* padding-top: 8px; */
-    padding-top: 12px;
+    padding-top: 14px;
     border-radius: 10px;
     margin: 50px 30px 0 0;
     transition:0.35s;
@@ -472,6 +435,7 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
 }
 
 .contact-text {
+    font-family: 'ONE-Mobile-POP', sans-serif;
     padding-top: 91px;
     text-align: center;
     font-weight: 900;
