@@ -5,13 +5,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'ONE-Mobile-POP';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body, html {
     scroll-behavior: smooth;
     margin: 0;
@@ -45,10 +38,7 @@ header {
 }
 
 header h1 {
-    font-family: 'ONE-Mobile-POP', sans-serif;
-    /* font-family: 'Inter', sans-serif; */
-    font-style: normal;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 60px;
     color: #fff;
     line-height: 73px;
@@ -80,8 +70,6 @@ header h1 > span {
 
 .nav-bar ul li a {
     text-decoration: none;
-    font-family: 'ONE-Mobile-POP', sans-serif;
-    font-style: normal;
     font-size: 18px;
     line-height: 24px;
     color: #fff;
@@ -127,10 +115,7 @@ header h1 > span {
 }
 
 .title-text {
-    /* font-family: 'Inter', sans-serif; */
-    font-family: 'ONE-Mobile-POP', sans-serif;
     font-size: 36px;
-    font-weight: 900;
     position: relative;
     display: inline-block;
 }
@@ -223,7 +208,7 @@ header h1 > span {
     color: #f06161;
     font-size: 24px;
     font-weight: 900;
-    margin-top: 35px;
+    margin-top: 70px;
 }
 
 .skills-frontend > img {
@@ -276,7 +261,7 @@ header h1 > span {
     max-width: 1320px;
     height: 950px;
     margin: 0 auto;
-    margin-top: 144px;
+    margin-top: 150px;
 }
 
 /* .project-text::after {
