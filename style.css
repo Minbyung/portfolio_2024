@@ -135,15 +135,7 @@ header h1 > span {
     display: inline-block;
 }
 
-.title-text::after {
-    content: "";
-    position: absolute;
-    left: 114px;
-    bottom: 14px; 
-    width: 100%;
-    height: 1.5px; 
-    background-color: black;
-}
+
 
 .photo {
     background-color: greenyellow;
@@ -177,9 +169,20 @@ header h1 > span {
 }
 
 .about-lisence-text {
+    position: relative;
     margin-top: 104px;
     font-size: 36px;
     font-weight: 900;
+}
+
+.about-lisence-text::after {
+    content: "";
+    position: absolute;
+    left: 130px;
+    bottom: 14px; 
+    width: 75px;
+    height: 1.5px; 
+    background-color: black;
 }
 
 .about-lisence-contents {
@@ -276,7 +279,7 @@ header h1 > span {
     margin-top: 144px;
 }
 
-.project-text::after {
+/* .project-text::after {
     content: "";
     position: absolute;
     left: 156px;
@@ -284,6 +287,11 @@ header h1 > span {
     width: 127px;
     height: 1.5px; 
     background-color: black;
+} */
+
+.box-shadow {
+    box-shadow: inset 0px -0.5em 0 0 rgba(204, 208, 240, 1);
+    width: fit-content;
 }
 
 .content-inner {
