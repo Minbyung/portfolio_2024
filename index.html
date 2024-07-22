@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <!-- 테일윈드 CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js.js"></script>
+    <script src="js.js" defer></script>
 </head>
 <body>
     <div class="w-full">
@@ -22,11 +22,11 @@
             <div class="flex-1"></div>
             <nav class="nav-bar">
                 <ul>
-                    <li class="active"><a href="#home" data-info="홈"></a></li>
-                    <li><a href="#about" data-info="소개"></a></li>
-                    <li><a href="#skills" data-info="기술"></a></li>
-                    <li><a href="#project" data-info="프로젝트"></a></li>
-                    <li><a href="#contact" data-info="연락처"></a></li>
+                    <li class="active"><a href="#home" data-info="Home"></a></li>
+                    <li><a href="#about" data-info="About"></a></li>
+                    <li><a href="#skills" data-info="Skills"></a></li>
+                    <li><a href="#project" data-info="Project"></a></li>
+                    <li><a href="#contact" data-info="Contact"></a></li>
                 </ul>
             </nav>
             <a href="#about">
@@ -51,14 +51,14 @@
                         <div class="about-content">
                             <span>1993.11.16</span>
                             <span>mbmcybery@gmail.com</span>
-                            <span>https://github.com/Minbyung</span>
+                            <span><a href="https://github.com/Minbyung">https://github.com/Minbyung</a></span>
                         </div>
                     </div>
                     <div class="about-lisence-text">LISENSE</div>
                     <div class="about-lisence-contents">
                         <div class="about-license-date">
-                            <span>2024.06</span>
-                            <span>2024.07</span>
+                            <span>2024.06.18</span>
+                            <span>2024.06.28</span>
                         </div>
                         <div class="about-lisence-content">
                             <span>정보처리산업기사 / 한국산업인력공단</span>
@@ -201,11 +201,19 @@
                   </div>
                   <div class="web-tab">
                     <div class="tab-inner">
-                      <div class="web-photo">
-                        <img src="images/CL1.png">
+                      <div class="flex flex-col">
+                        <div class="web-photo">
+                          <img src="images/TUdetail1.png" onclick="window.open(this.src)" alt="TeamUP" class="cursor-pointer" id="mainImage">
+                        </div>
+                        <div class="image-buttons">
+                          <button class="active" onclick="changeImage('images/TUdetail1.png', this)">1</button>
+                          <button onclick="changeImage('images/TUdetail2.png', this)">2</button>
+                          <button onclick="changeImage('images/TUdetail3.png', this)">3</button>
+                          <button onclick="changeImage('images/TUdetail4.png', this)">4</button>
+                        </div>
                       </div>
                       <div class="tab-info">
-                        <h3>협업랜드</h3>
+                        <h3>TeamUP</h3>
                         <div class="project-contents">
                           <div class="project-title">
                               <span>작업기간</span>
@@ -217,8 +225,8 @@
                               <span>50일</span>
                               <span>Spring boot + JSP</span>
                               <span>개인작업</span>
-                              <span>
-                                <p>WebSocket을 사용하여 실시간 채팅 및 실시간 알림 기능 구현</p>
+                              <span class="project-detail">
+                                <p>WebSocket,STOMP를 사용하여 실시간 채팅 및 실시간 알림 기능 구현</p>
                                 <br>
                                 <p>Zoom Create Meeting API를 사용하여 화상 회의 구현</p>
                                 <br>

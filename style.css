@@ -53,7 +53,7 @@ body, html {
 
 .typing-animation {
     overflow: hidden;
-    border-right: .04em solid black; /* 애니메이션 동안 깜박이는 커서 */
+    border-right: .04em solid black; 
     white-space: nowrap;
     margin: 0 auto;
     animation: 
@@ -76,44 +76,10 @@ header h1 > span {
     color: #f06161    
 }
 
-/* .nav-bar {
-    position: fixed;
-    right: 0px;
-    background-color: #333; 
-    padding: 20px;
-}
-
-.nav-bar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 57px;
-}
-
-.nav-bar ul li {
-    display: flex;
-    align-items: center;
-}
-
-.nav-bar ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 24px;
-    color: #fff;
-}
-
-.nav-bar ul li.active a {
-    color: #FF5C5C;
-} */
-
 .nav-bar {
-    position: fixed; /* 네비바를 고정시킴 */
+    position: fixed; 
     right: 0px;
-    background-color: #333; /* 배경색 추가 */
+    background-color: #314153; 
     padding: 20px;
     display: flex;
     align-items: center;
@@ -211,8 +177,6 @@ header h1 > span {
     position: relative;
     display: inline-block;
 }
-
-
 
 .photo {
     background-color: greenyellow;
@@ -358,16 +322,6 @@ header h1 > span {
     padding-top: 50px;
 }
 
-/* .project-text::after {
-    content: "";
-    position: absolute;
-    left: 156px;
-    bottom: 14px; 
-    width: 127px;
-    height: 1.5px; 
-    background-color: black;
-} */
-
 .box-shadow {
     box-shadow: inset 0px -0.5em 0 0 rgba(204, 208, 240, 1);
     width: fit-content;
@@ -376,7 +330,6 @@ header h1 > span {
 .content-inner {
     display: flex;
 }
-
 
 /* tab button */
 input[name=weblist] {
@@ -401,7 +354,6 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
 
 .web-tab-btn {
     text-align: center;
-    /* min-width: 190px; */
     min-width: 160px;
     display: flex;
     flex-direction: column;
@@ -446,8 +398,8 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.171);
 }
 .web-photo img {
-    width: inherit;
-    height: inherit;
+    width: 600px;
+    height: 500px;
     object-fit: cover;
     object-position: top;
     transition: 8s;
@@ -459,6 +411,33 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
 
 .web-photo img:hover {
     object-position: bottom;
+}
+
+/* 이미지 버튼 스타일 추가 */
+.image-buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.image-buttons button {
+    background-color: #2b2b2b;
+    color: #fff;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.image-buttons button:hover {
+    background-color: #f06161;
+}
+
+.image-buttons button.active {
+    background-color: #f06161;
 }
 
 /* tab-info */
@@ -481,7 +460,6 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     width: 127px;
     height: 48px;
     text-align: center;
-    /* padding-top: 8px; */
     padding-top: 14px;
     border-radius: 10px;
     margin: 50px 30px 0 0;
@@ -513,7 +491,6 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     flex-direction: column;
     gap: 50px;
     width: 128px;
-    /* height: 139px; */
     font-size: 18px;
     font-weight: bold;
 }
@@ -522,8 +499,10 @@ input[id=web-tab3]:checked ~ .web-tabs .web-tab:nth-child(3)
     display: flex;
     flex-direction: column;
     gap: 50px;
-    /* width: 235px; */
-    /* height: 139px; */
+}
+
+.project-detail {
+    max-width: 231px;
 }
 
 /* footer */
