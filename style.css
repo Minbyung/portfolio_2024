@@ -33,6 +33,34 @@ body, html {
 
 /* BYUNGMIN’S */
 
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+
+.typing-animation {
+    overflow: hidden;
+    border-right: .04em solid black; /* 애니메이션 동안 깜박이는 커서 */
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .75s step-end infinite;
+}
+
 header {
     margin-left: 310px;
 }
@@ -48,8 +76,11 @@ header h1 > span {
     color: #f06161    
 }
 
-.nav-bar {
-    margin-right: 193px;
+/* .nav-bar {
+    position: fixed;
+    right: 0px;
+    background-color: #333; 
+    padding: 20px;
 }
 
 .nav-bar ul {
@@ -77,6 +108,66 @@ header h1 > span {
 
 .nav-bar ul li.active a {
     color: #FF5C5C;
+} */
+
+.nav-bar {
+    position: fixed; /* 네비바를 고정시킴 */
+    right: 0px;
+    background-color: #333; /* 배경색 추가 */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 57px;
+}
+
+.nav-bar ul li {
+    position: relative;
+}
+
+.nav-bar ul li a::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.nav-bar ul li a:hover::after {
+    content: attr(data-info);
+    position: absolute;
+    top: -9px;
+    right: 30px;
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.nav-bar ul li a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    position: relative;
+}
+
+.nav-bar ul li.active a::before {
+    background-color: #FF5C5C;
 }
 
 .arrow {
@@ -111,7 +202,8 @@ header h1 > span {
     min-width: 1320px;
     max-width: 1320px;
     margin: 0 auto;
-    margin-top: 216px;
+    margin-top: 166px;
+    padding-top: 50px;
 }
 
 .title-text {
@@ -201,7 +293,8 @@ header h1 > span {
     min-width: 1320px;
     max-width: 1320px;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 166px;
+    padding-top: 50px;
 }
 
 .skills-stack {
@@ -261,7 +354,8 @@ header h1 > span {
     max-width: 1320px;
     height: 950px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 166px;
+    padding-top: 50px;
 }
 
 /* .project-text::after {
