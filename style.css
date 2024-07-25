@@ -185,6 +185,14 @@ header h1 > span {
     height: 328px;
 }
 
+.photo-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0c0c0c;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
 .about-contents {
     margin-top: 52px;
     display: flex;
