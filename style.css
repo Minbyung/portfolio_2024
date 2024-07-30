@@ -178,11 +178,10 @@ header h1 > span {
     display: inline-block;
 }
 
-.photo {
-    background-color: greenyellow;
-    min-width: 261px;
-    min-height: 328px;
-    height: 328px;
+.photo > img {
+    width: 262.5px;
+    height: 350px;
+    border-radius: 20px;
 }
 
 .photo-name {
