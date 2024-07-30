@@ -84,6 +84,7 @@ header h1 > span {
     display: flex;
     align-items: center;
     z-index: 1000;
+    border-radius: 20px;
 }
 
 .nav-bar ul {
